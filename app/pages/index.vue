@@ -87,14 +87,15 @@
       <section
         class="mt-16 w-full max-w-2xl bg-gradient-to-r from-indigo-100 via-white to-blue-100 rounded-2xl shadow p-8 border border-indigo-50"
       >
-        <h2
+        <UButton
+          to="/trade"
           class="text-2xl font-bold text-indigo-700 mb-4 flex items-center gap-2"
         >
           <span
             class="i-heroicons-sparkles-20-solid text-indigo-400 text-2xl"
           />
           Get Started
-        </h2>
+        </UButton>
         <ol class="list-decimal list-inside space-y-2 text-gray-700 text-lg">
           <li>Create your own dashboard with widgets.</li>
           <li>Develop signals and strategies in Python.</li>
