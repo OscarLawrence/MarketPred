@@ -1,0 +1,18 @@
+.dragize-resize-handle {
+  position: absolute;
+  z-index: 1000;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+  bottom: 0;
+  right: 0;
+}
+
+.dragize-resizing {
+  background-color: rgba(0, 0, 255, 0.5);
+  border: 1px dashed blue;
+}
+
+.dragize-draggable {
+  cursor: grab;
+}

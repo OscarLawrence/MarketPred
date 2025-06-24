@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+
+  --color-green-50: #effdf5;
+  --color-green-100: #d9fbe8;
+  --color-green-200: #b3f5d1;
+  --color-green-300: #75edae;
+  --color-green-400: #00dc82;
+  --color-green-500: #00c16a;
+  --color-green-600: #00a155;
+  --color-green-700: #007f45;
+  --color-green-800: #016538;
+  --color-green-900: #0a5331;
+  --color-green-950: #052e16;
+}
+
+.dragize-draggable {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  border: 1.5px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.96);
+  transition: box-shadow 0.18s, border-color 0.18s;
+  outline: none;
+}
+.dragize-draggable:hover,
+.dragize-draggable:focus-visible {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-color: #00dc82;
+}
+
+.dragize-resizable {
+  border-radius: 12px;
+  border: 1.5px dashed #b3f5d1;
+  background: rgba(0, 220, 130, 0.07);
+  transition: border-color 0.18s, background 0.18s;
+  outline: none;
+}
+.dragize-resizable:hover,
+.dragize-resizable:focus-visible {
+  border-color: #00dc82;
+  background: rgba(0, 220, 130, 0.13);
+}
+
+.dragize-draggable.dragize-resizable {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  border: 1.5px dashed #b3f5d1;
+  background: rgba(255, 255, 255, 0.96);
+  transition: box-shadow 0.18s, border-color 0.18s;
+  outline: none;
+}
+
+.dragize-draggable.dragize-resizable:hover,
+.dragize-draggable.dragize-resizable:focus-visible {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-color: #00dc82;
+  background: rgba(255, 255, 255, 0.99);
+}
